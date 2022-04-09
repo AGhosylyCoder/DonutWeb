@@ -18,7 +18,7 @@ renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
 camera.position.setZ(30);
 
-const donutTexture = new THREE.TextureLoader().load('donutTexture.png')
+const donutTexture = new THREE.TextureLoader().load('./donutTexture.png')
 
 const Geometry = new THREE.TorusGeometry( 9, 5, 32, 50 );
 const Material = new THREE.MeshStandardMaterial( { map: donutTexture, wireframe: false } );
@@ -78,8 +78,8 @@ function addStar()
 
 // scene.add(me);
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+const moonTexture = new THREE.TextureLoader().load('./moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('./normal.jpg');
 
 
 const moon = new THREE.Mesh(
@@ -130,7 +130,7 @@ saturnBelt2.position.y += 1;
 saturnBelt2.position.setX(-20);
 
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./space.jpg');
 scene.background = spaceTexture;
 
 function moveCamera() {
